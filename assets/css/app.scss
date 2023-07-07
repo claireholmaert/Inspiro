@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.one {
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  background-color: #2B2D42;
+  border-radius: 7px;
+}
+
+.two {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  background-color: #8D99AE;
+  border-radius: 7px;
+}
+
+.three {
+  position: relative;
+  left: 55px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #EF233C;
+  border-radius: 7px;
+}
+
+h1 {
+  position: relative;
+  left: 25px;
+  bottom: 20px;
+}

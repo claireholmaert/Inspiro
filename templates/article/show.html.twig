@@ -1,10 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block title %}{{ article.title }}{% endblock %}
 
+{% block main %}
+    <div class="container mt-10">
+        <h1 class="text-red-500 font-semibold">{{ article.title }}</h1>
+        <div class="border-b-2"></div>
+        <p>{{ article.content | raw }}</p>
+    </div>
 {% endblock %}
 
-{% block title %}
 
-{% endblock %}
 

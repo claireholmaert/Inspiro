@@ -15,4 +15,10 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    #[Route('/show', name: 'home_show')]
+    public function show(): Response
+    {
+        return $this->render('home/show.html.twig');
+    }
 }

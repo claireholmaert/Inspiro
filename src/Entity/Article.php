@@ -195,4 +195,9 @@ class Article implements TimestampedInterface
 
         return $this;
     }
+
+    public function __toString(): string
+    {
+        return $this->title; // car erreur Object of class App\Entity\Article could not be converted to string
+    }
 }

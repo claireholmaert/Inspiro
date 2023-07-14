@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Article;
 use App\Entity\Category;
+use App\Entity\Comment;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -38,7 +39,8 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
-        yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
+        // permet de retourner sur le site
+        yield MenuItem::linkToRoute('Tableau de bord', 'fa fa-home', 'home_index');
 
         yield MenuItem::subMenu('Articles', 'fas fa-newspaper')->setSubItems(
             [
@@ -47,5 +49,7 @@ class DashboardController extends AbstractDashboardController
                 MenuItem::linkToCrud('Catégories', 'fas fa-list', Category::class),
             ]
         );
+
+        yield MenuItem::linkToCrud('Commentaires', 'fas fa-comment', Comment::class);
     }
 }

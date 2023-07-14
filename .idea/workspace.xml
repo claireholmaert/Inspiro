@@ -4,34 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b397fac-6d02-4255-87e6-335b2be113e4" name="Changes" comment="affichage du user avec son menu">
-      <change afterPath="$PROJECT_DIR$/config/packages/uid.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/CategoryCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/CommentCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/MediaCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/MenuCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/OptionCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/PageCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/AdminSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/TimestampedInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/article/item.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/article/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Inspiro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Inspiro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="6b397fac-6d02-4255-87e6-335b2be113e4" name="Changes" comment="mise en place de easyAdmin&#10;Article et Category fait">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ced5797f-7029-410f-b613-7374cdd63b8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ced5797f-7029-410f-b613-7374cdd63b8c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,6 +236,10 @@
       <workItem from="1688971909447" duration="1609000" />
       <workItem from="1688978428632" duration="3170000" />
       <workItem from="1689071776133" duration="4435000" />
+      <workItem from="1689145319062" duration="144000" />
+      <workItem from="1689239253376" duration="49000" />
+      <workItem from="1689243746521" duration="5000" />
+      <workItem from="1689246722605" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />

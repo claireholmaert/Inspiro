@@ -3,7 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\User;
-use App\Form\RegistrationFormType;
+use App\Form\Type\RegistrationFormType;
+use App\Service\OptionService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,6 +15,11 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class UserController extends AbstractController
 {
+
+    public function __construct(private OptionService $optionService)
+    {
+    }
+
     #[Route(path: '/user/register',
         name: 'user_register')]
     public function register(
@@ -22,6 +28,10 @@ class UserController extends AbstractController
         EntityManagerInterface $entityManager
     ): Response
     {
+        $userCanRegister = $this->optionService->getValue('users_can_register');
+        if (!$userCanRegister) {
+            return $this->redirectToRoute('home_index');
+        }
         $user = new User();
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);

@@ -1,10 +1,10 @@
 {% set article_show = path('article_show', { 'slug': article.slug }) %}
 <article class="mb-5">
-    <div class="row">
+    <div class="flex space-x-6 ml-6 items-center border rounded-md p-2">
         <div class="md:col-span{{ leftCol ?? 5 }}">
             {% if article.featuredImage %}
                 <a href="{{ article_show }}">
-                    <img src="/uploads/{{ article.featuredImage.filename }}" alt="{{ article.featuredImage.altText }}" loading="lazy" width="350" height="205">
+                    <img src="/uploads/{{ article.featuredImage.filename }}" alt="{{ article.featuredImage.altText }}" loading="lazy" width="125" height="125">
                 </a>
             {% endif %}
         </div>

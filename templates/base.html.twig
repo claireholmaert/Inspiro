@@ -1,4 +1,5 @@
 {% set menus = menu_service.findAll %}
+{% set options = option_service.findAll %}
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -39,13 +40,13 @@
                         <div>
                             <button type="button" class="flex text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                                 <span class="sr-only">Open user menu</span>
-                                <a href="{{ path('home_show') }}" class="text-sm font-semibold leading-6 text-blue-950 hover:text-red-500">Mon blog</a>
+                                <a href="{{ path('home_show') }}" class="text-sm font-semibold leading-6 text-blue-950 hover:text-red-500">{{ options['blog_title'] }}</a>
                             </button>
                         </div>
                         <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-200 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                             <a href="{{ path('admin') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Tableau de bord</a>
                             {% if is_granted('ROLE_ADMIN') %}
-                                <a href="{{ ea_index('MenuCrudController') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Menus</a>
+                                <a href="{{ ea_gen_url('MenuCrudController') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Menus</a>
                             {% endif %}
                         </div>
                     </div>
@@ -58,8 +59,8 @@
                             </button>
                         </div>
                         <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-200 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                            <a href="#" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Article</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Page</a>
+                            <a href="{{ ea_gen_url('ArticleCrudController', 'new') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Article</a>
+                            <a href="{{ ea_gen_url('PageCrudController', 'new') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Page</a>
                         </div>
                     </div>
                     {% for menu in menus %}
@@ -200,7 +201,7 @@
 
         </div>
 
-        <p class="text-blue-950 text-center">&copy; Inspiro - {{ 'now' | date('Y') }}</p>
+        <p class="text-blue-950 text-center">&copy; Inspiro - {{ 'now' | date('Y') }}. {{ options['blog_copyright'] }}</p>
 
     </footer>
     </body>

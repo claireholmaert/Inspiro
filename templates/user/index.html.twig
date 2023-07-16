@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block main %}
+    <div class="container mx-auto mt-10">
+        <div class="row">
+
+            <div class="flex items-center flex-col space-y-6">
+                <h2 class="text-blue-950">Profil de {{ user.username }}</h2>
+
+                <div class="col-12">
+                    <label for="username" class="form-label text-blue-950">Nom d'utilisateur</label>
+                </div>
+
+                <div class="mb-3">
+                    <div class="input-group flex items-center space-x-2">
+                        <span class="input-group-text">@</span>
+                        <p class="bg-slate-200 p-2 rounded text-red-400">{{ user.username }}</p>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-blue-950">Nombre de commentaires postés : {{ user.comments | length }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

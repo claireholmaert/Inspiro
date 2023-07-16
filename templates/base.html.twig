@@ -22,7 +22,7 @@
                         <div class="one"></div>
                         <div class="two"></div>
                         <div class="three"></div>
-                        <h1>Inspiro</h1>
+                        <h1 class="font-semibold">Inspiro</h1>
                     </a>
                 </div>
                 <div class="flex lg:hidden">
@@ -34,6 +34,7 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex lg:gap-x-12">
+                    {% if is_granted('ROLE_AUTHOR') %}
                     <div class="relative ml-3 group">
                         <div>
                             <button type="button" class="flex text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
@@ -43,9 +44,12 @@
                         </div>
                         <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-200 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                             <a href="{{ path('admin') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Tableau de bord</a>
-                            <a href="{{ ea_index('MenuCrudController') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Menus</a>
+                            {% if is_granted('ROLE_ADMIN') %}
+                                <a href="{{ ea_index('MenuCrudController') }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Menus</a>
+                            {% endif %}
                         </div>
                     </div>
+                    {% endif %}
                     <div class="relative ml-3 group">
                         <div>
                             <button type="button" class="flex text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
@@ -77,7 +81,7 @@
                     <a href="#" class="text-sm font-semibold leading-6 text-blue-950 hover:text-red-500">Contact</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                    {% if app.user %}
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                         <div class="relative ml-3 group">
                             <div>
                                 <button type="button" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
@@ -87,15 +91,15 @@
                             </div>
 
                             <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-200 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                                <a href="#" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Votre profil</a>
+                                <a href="{{ path('user_index', { username: app.user.username }) }}" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Mon profil</a>
                                 <a href="#" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Paramètres</a>
-                                <a href="#" class="block px-4 py-2 text-sm text-red-500 hover:bg-slate-200" role="menuitem" tabindex="-1" id="item user-menu-item-2">Déconnexion</a>
+                                <a href="{{ path('user_logout') }}" class="block px-4 py-2 text-sm text-red-500 hover:bg-slate-200" role="menuitem" tabindex="-1" id="item user-menu-item-2">Déconnexion</a>
                             </div>
                         </div>
                     {% endif %}
 
-                    {% if not app.user %}
-                        <a href="#" class="text-sm font-semibold leading-6 text-blue-950 hover:text-red-500">Se Connecter <span aria-hidden="true">&rarr;</span></a>
+                    {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <a href="{{ path('user_login') }}" class="text-sm font-semibold leading-6 text-blue-950 hover:text-red-500">Se Connecter <span aria-hidden="true">&rarr;</span></a>
                     {% endif %}
                 </div>
 
@@ -143,14 +147,14 @@
                                 </div>
 
                                 <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-200 transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                                    <a href="#" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Votre Profil</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-0">Mon Profil</a>
                                     <a href="#" class="block px-4 py-2 text-sm text-blue-950 hover:bg-red-100" role="menuitem" tabindex="-1" id="item user-menu-item-1">Paramètres</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-red-500 hover:bg-slate-200" role="menuitem" tabindex="-1" id="item user-menu-item-2">Déconnexion</a>
+                                    <a href="{{ path('user_logout') }}" class="block px-4 py-2 text-sm text-red-500 hover:bg-slate-200" role="menuitem" tabindex="-1" id="item user-menu-item-2">Déconnexion</a>
                                 </div>
                             </div>
 
                             <div class="py-6">
-                                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-blue-950 hover:text-red-500">Se Connecter</a>
+                                <a href="{{ path('user_login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-blue-950 hover:text-red-500">Se Connecter</a>
                             </div>
 
                         </div>
@@ -165,7 +169,7 @@
     {% block home %}{% endblock %}
     {% block main %}{% endblock %}
 
-    <footer class="bg-slate-300 mt-20">
+    <footer class="bg-slate-200 mt-20">
 
         <div class="grid grid-cols-4 py-10">
             <div>

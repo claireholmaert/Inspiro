@@ -44,10 +44,12 @@
                     </button>
                 </div>
 
-                <p class="mt-10 text-center text-sm text-gray-500">
-                    Vous n'avez pas encore de compte ?
-                    <a href="{{ path('user_register') }}" class="font-semibold leading-6 text-blue-950 hover:border-b hover:border-b-red-500">Inscrivez-vous</a>
-                </p>
+                {% if not is_granted('IS_AUTHENTICATED_FULLY') and '1' == options['users_can_register'] %}
+                    <p class="mt-10 text-center text-sm text-gray-500">
+                        Vous n'avez pas encore de compte ?
+                        <a href="{{ path('user_register') }}" class="font-semibold leading-6 text-blue-950 hover:border-b hover:border-b-red-500">Inscrivez-vous</a>
+                    </p>
+                {% endif %}
             </form>
         </div>
 {% endblock %}

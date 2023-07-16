@@ -7,6 +7,7 @@ use App\Entity\Category;
 use App\Entity\Comment;
 use App\Entity\Media;
 use App\Entity\Menu;
+use App\Entity\Option;
 use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
@@ -46,6 +47,13 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToRoute('Tableau de bord', 'fa fa-home', 'home_index');
 
         if ($this->isGranted('ROLE_ADMIN')) {
+            yield MenuItem::subMenu('Comptes', 'fas fa-list')->setSubItems(
+                [
+                    MenuItem::linkToCrud('Tous les comptes', 'fas fa-user-friends', User::class),
+                    MenuItem::linkToCrud('Ajouter', 'fas fa-plus', User::class)->setAction(Crud::PAGE_NEW),
+                ]
+            );
+
             yield MenuItem::subMenu('Menus', 'fas fa-list')->setSubItems(
                 [
                     MenuItem::linkToCrud('Pages', 'fas fa-file', Menu::class),
@@ -57,12 +65,6 @@ class DashboardController extends AbstractDashboardController
 
             yield MenuItem::linkToCrud('Commentaires', 'fas fa-comment', Comment::class);
 
-            yield MenuItem::subMenu('Comptes', 'fas fa-list')->setSubItems(
-                [
-                    MenuItem::linkToCrud('Tous les comptes', 'fas fa-user-friends', User::class),
-                    MenuItem::linkToCrud('Ajouter', 'fas fa-plus', User::class)->setAction(Crud::PAGE_NEW),
-                ]
-            );
         }
 
         if ($this->isGranted('ROLE_AUTHOR')) {
@@ -78,6 +80,14 @@ class DashboardController extends AbstractDashboardController
                 [
                     MenuItem::linkToCrud('Médiathèque', 'fas fa-photo-video', Media::class),
                     MenuItem::linkToCrud('Ajouter', 'fas fa-plus', Media::class)->setAction(Crud::PAGE_NEW),
+                ]
+            );
+        }
+
+        if ($this->isGranted('ROLE_ADMIN')) {
+            yield MenuItem::subMenu('Réglages', 'fas fa-cog')->setSubItems(
+                [
+                    MenuItem::linkToCrud('Général', 'fas fa-cog', Option::class),
                 ]
             );
         }

@@ -4,21 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b397fac-6d02-4255-87e6-335b2be113e4" name="Changes" comment="commentaire en place">
-      <change afterPath="$PROJECT_DIR$/src/Service/MenuService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Twig/AppExtension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Inspiro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Inspiro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ced5797f-7029-410f-b613-7374cdd63b8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ced5797f-7029-410f-b613-7374cdd63b8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_17_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_17_48__Changes_.xml" afterDir="false" />
+    <list default="true" id="6b397fac-6d02-4255-87e6-335b2be113e4" name="Changes" comment="mise en place des menus">
+      <change afterPath="$PROJECT_DIR$/public/uploads/79927-1de1e645-b3e0-43c0-bacf-a28fcda118ed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/79927-3b02fe9a-54ed-4289-ac42-1f3c79054732.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/79927-489db61e-9497-4316-8fe8-74a5bcf14821.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/79927-91d26f3e-297d-44fa-afd3-9693087af2ba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/AppAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_07_2023_16_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_07_2023_16_00__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ArticleCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MenuCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MenuCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/MenuRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MenuRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MediaCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MediaCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,6 +230,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\templates\user" />
       <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\public\images" />
       <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\assets\js" />
       <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\public" />
@@ -257,6 +270,7 @@
       <workItem from="1689243746521" duration="5000" />
       <workItem from="1689246722605" duration="23000" />
       <workItem from="1689408518972" duration="6577000" />
+      <workItem from="1689494889543" duration="6767000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -277,6 +291,7 @@
     <MESSAGE value="commit test" />
     <MESSAGE value="affichage du user avec son menu" />
     <MESSAGE value="mise en place de ma page mon blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="mise en place de ma page mon blog" />
+    <MESSAGE value="mise en place des menus" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise en place des menus" />
   </component>
 </project>

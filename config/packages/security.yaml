@@ -16,6 +16,15 @@ security:
         main:
             lazy: true
             provider: app_user_provider
+            # Configuration pour l'authentification via formulaire
+            form_login:
+                login_path: user_login  # Chemin vers la page de connexion
+                check_path: user_login  # Chemin de vérification du formulaire de connexion
+                enable_csrf: true     # Activation de la protection CSRF
+            logout:
+                path: user_logout
+                # where to redirect after logout
+                # target: app_any_route
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
@@ -28,6 +37,10 @@ security:
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_AUTHOR
+        ROLE_AUTHOR: ROLE_USER
+
 
 when@test:
     security:

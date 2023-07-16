@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Comment;
+use App\Entity\User;
 use App\Repository\ArticleRepository;
 use App\Repository\CommentRepository;
 use App\Repository\UserRepository;
@@ -11,7 +12,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\User\UserInterface;
 
+/**
+ * @method User getUser()
+ */
 class CommentController extends AbstractController
 {
     #[Route('/ajax/comments',
@@ -45,9 +50,19 @@ class CommentController extends AbstractController
             );
         }
 
+        $user = $this->getUser();
+        if (!$user) {
+            return $this->json(
+                [
+                    'code' => 'USER_NOT_AUTHENTIFICATED_FULLY'
+                ],
+                Response::HTTP_BAD_REQUEST
+            );
+        }
+
         $comment = new Comment($article);
         $comment->setContent($commentData['content']);
-        $comment->setUser($userRepository->findOneBy(['id'=> 1]));
+        $comment->setUser($user);
         $comment->setCreateAt(new \DateTimeImmutable('Europe/Paris'));
 
         $entityManager->persist($comment);

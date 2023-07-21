@@ -46,7 +46,6 @@ class AppExtension extends AbstractExtension
 
     public function menuLink(Menu $menu): string
     {
-        $article = $menu->getArticle();
         $category = $menu->getCategory();
         $page = $menu->getPage();
 

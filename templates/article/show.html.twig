@@ -8,21 +8,21 @@
             <div class="border-b-2"></div>
             <p>{{ article.content | raw }}</p>
 
-            <h2 class="comment_title mt-5 border-b-2">
-                <span class="comment_count">{{ article.comments | length }} {{ article.comments | length > 1 ? 'commentaires' : 'commentaire' }}</span>
-            </h2>
+{#            <h2 class="comment_title mt-5 border-b-2">#}
+{#                <span class="comment_count">{{ article.comments | length }} {{ article.comments | length > 1 ? 'commentaires' : 'commentaire' }}</span>#}
+{#            </h2>#}
 
-            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                <div class="comment_area mb-5">
-                    {{ form(commentForm, { 'attr': { 'class': 'comment-form' } }) }}
-                </div>
-            {% endif %}
+{#            {% if is_granted('IS_AUTHENTICATED_FULLY') %}#}
+{#                <div class="comment_area mb-5">#}
+{#                    {{ form(commentForm, { 'attr': { 'class': 'comment-form' } }) }}#}
+{#                </div>#}
+{#            {% endif %}#}
 
-            <div class="comment-list">
-                {% for comment in comments %}
-                    {%include 'comment/index.html.twig' with [comment] %}
-                {% endfor %}
-            </div>
+{#            <div class="comment-list">#}
+{#                {% for comment in comments %}#}
+{#                    {%include 'comment/index.html.twig' with [comment] %}#}
+{#                {% endfor %}#}
+{#            </div>#}
 
     </div>
 {% endblock %}

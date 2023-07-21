@@ -1,15 +1,17 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Articles{% endblock %}
+
 {% block main %}
     <div class="isolate lg:px-8">
-        <div class="grid grid-cols-2 gap-4">
-            <div class="col-span-2 md:col-span-1 ml-10">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div class="col-span-5 md:col-span-4">
                 <h3 class="text-blue-950 font-bold italic text-xl">Articles récents</h3>
                 <div id="article_list" class="mt-4">
                     {% include 'article/list.html.twig' with { articles } %}
                 </div>
             </div>
-            <div class="col-span-2 md:col-span-1">
+            <div class="col-span-5 md:col-span-1">
                 {% include('widget/about.html.twig') %}
                 {% include('widget/categories.html.twig') %}
             </div>

@@ -38,7 +38,7 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Symfony CMS');
+            ->setTitle('Inspiro CMS');
     }
 
     public function configureMenuItems(): iterable

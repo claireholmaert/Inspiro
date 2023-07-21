@@ -23,7 +23,11 @@ class CategoryCrudController extends AbstractCrudController
 
         yield TextField::new('name');
         yield SlugField::new('slug')->setTargetFieldName('name');
-        yield TextField::new('icon');
+        yield ImageField::new('icon')
+            ->setBasePath('/images') // Chemin relatif depuis la racine du dossier "public" vers le dossier des images
+            ->setUploadDir('public/images') // Chemin absolu vers le dossier d'upload des images
+            ->setUploadedFileNamePattern('[randomhash].[extension]') // Patron de nom de fichier pour les images uploadées
+            ->setRequired(false); // Optionnel : si l'image n'est pas requise, tu peux définir cette option à false
         yield ColorField::new('color');
     }
 

@@ -1,9 +1,12 @@
 <div class="p-4 bg-slate-200 rounded">
-    <h4 class="italic">Catégories</h4>
-    <ol class="list-none mb-0 text-blue-950">
+    <h4 class="italic mb-4">Catégories</h4>
+    <ol class="grid gap-4 grid-cols-2 text-blue-950">
         {% for category in categories %}
-            <li>
-                <a href="{{ path('category_show', { slug: category.slug }) }}">{{ category.name }}</a>
+            <li class="flex items-center gap-x-6">
+                <a href="{{ path('category_show', { slug: category.slug }) }}">
+                    <span>{{ category.name }}</span>
+                    <img src="{{ asset('images/' ~ category.icon) }}" alt="icon" width="25" height="25">
+                </a>
             </li>
         {% endfor %}
     </ol>

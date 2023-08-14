@@ -4,10 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b397fac-6d02-4255-87e6-335b2be113e4" name="Changes" comment="projet fini, reste l'optimisation du code">
+    <list default="true" id="6b397fac-6d02-4255-87e6-335b2be113e4" name="Changes" comment="modification du code">
+      <change afterPath="$PROJECT_DIR$/public/images/4b574e203be630ea9ecb1a7605a9e8285da3b759.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/88e3df208244385f3d64c9e31e946ac5fe7ea2c3.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f30d68f28c138d317444be02d7b045b66f8837e8.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/github-icon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/javascript.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/linkedin-icon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/python.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/angular-icon-983e60af-6742-439b-93a1-404f97053021.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/docker-icon-92b325ab-bd92-4258-96da-19c8f7c50e17.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/javascript-6b8a34ef-c4ab-4938-9680-fe393aa8e410.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/mysql-03531b37-2c78-41bd-8d5d-83a2ab0a0d77.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/python-0c5e2835-f310-4c67-b17d-bc4d2e1d4b3f.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/sass-ef6333f4-b118-47ec-9b6c-c2022ccd1973.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/symfony-72658d77-accd-4f03-9152-f0b6426591be.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ced5797f-7029-410f-b613-7374cdd63b8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ced5797f-7029-410f-b613-7374cdd63b8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_07_2023_12_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_07_2023_12_07__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_07_2023_12_07_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_07_2023_12_07__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_07_2023_16_00_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14_07_2023_16_00__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/github-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/javascript.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/linkedin-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/python.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/111-3d35ce0b-b60f-4181-9fc0-455a51419715.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/79927-1de1e645-b3e0-43c0-bacf-a28fcda118ed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/79927-3b02fe9a-54ed-4289-ac42-1f3c79054732.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/79927-489db61e-9497-4316-8fe8-74a5bcf14821.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/79927-91d26f3e-297d-44fa-afd3-9693087af2ba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/symfony-72d97c98-48ec-457e-be83-aff21b6f7042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +210,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2S6DmExgOaCt4wLFGykksi8kQea" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -186,32 +221,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright.filetypes.Sass&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/claire/Desktop/Projets/Symfony/Inspiro/public/images",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "copyright.filetypes.Sass",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\templates\user" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\public\images" />
+      <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\templates\user" />
       <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\assets\js" />
       <recent name="C:\Users\claire\Desktop\Projets\Symfony\Inspiro\public" />
     </key>
@@ -253,6 +292,21 @@
       <workItem from="1689494889543" duration="6767000" />
       <workItem from="1689577457535" duration="744000" />
       <workItem from="1689580134273" duration="1463000" />
+      <workItem from="1689945754632" duration="5329000" />
+      <workItem from="1690021309775" duration="4577000" />
+      <workItem from="1690181502003" duration="46000" />
+      <workItem from="1690190810155" duration="1453000" />
+      <workItem from="1690195660576" duration="1862000" />
+      <workItem from="1690284741797" duration="648000" />
+      <workItem from="1691050021428" duration="610000" />
+      <workItem from="1691135658227" duration="63000" />
+      <workItem from="1691135896977" duration="703000" />
+      <workItem from="1691136638565" duration="17000" />
+      <workItem from="1691144428133" duration="648000" />
+      <workItem from="1691147191078" duration="11000" />
+      <workItem from="1691484392679" duration="797000" />
+      <workItem from="1691491180368" duration="620000" />
+      <workItem from="1691590726434" duration="2171000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -270,7 +324,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689529303491</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ajout d'icon a category">
+      <option name="closed" value="true" />
+      <created>1689946658202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689946658202</updated>
+    </task>
+    <task id="LOCAL-00004" summary="modification du code">
+      <option name="closed" value="true" />
+      <created>1689951005121</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689951005121</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +353,8 @@
     <MESSAGE value="mise en place de ma page mon blog" />
     <MESSAGE value="mise en place des menus" />
     <MESSAGE value="projet fini, reste l'optimisation du code" />
-    <option name="LAST_COMMIT_MESSAGE" value="projet fini, reste l'optimisation du code" />
+    <MESSAGE value="ajout d'icon a category" />
+    <MESSAGE value="modification du code" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification du code" />
   </component>
 </project>

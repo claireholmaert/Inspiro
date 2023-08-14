@@ -51,6 +51,17 @@ class App {
     }
 }
 
+document.getElementById("openButton").addEventListener("click", function () {
+    // Afficher la deuxième div en supprimant la classe "invisible"
+    document.getElementById("menuBurger").classList.remove("invisible");
+});
+
+// Lorsque le bouton "Close menu" est cliqué
+document.getElementById("closeButton").addEventListener("click", function () {
+    // Masquer la deuxième div en ajoutant la classe "invisible"
+    document.getElementById("menuBurger").classList.add("invisible");
+});
+
 
 
 

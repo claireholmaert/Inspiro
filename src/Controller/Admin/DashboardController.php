@@ -44,7 +44,7 @@ class DashboardController extends AbstractDashboardController
     public function configureMenuItems(): iterable
     {
         // permet de retourner sur le site
-        yield MenuItem::linkToRoute('Tableau de bord', 'fa fa-home', 'home_index');
+        yield MenuItem::linkToRoute('Accueil', 'fa fa-home', 'home_index');
 
         if ($this->isGranted('ROLE_ADMIN')) {
             yield MenuItem::subMenu('Comptes', 'fas fa-list')->setSubItems(
